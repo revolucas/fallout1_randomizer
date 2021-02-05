@@ -12,7 +12,7 @@ x64 bit Lua Fallout 1 randomizer
 ## Usage
 * Set Fallout 1 directory in fallout1_randomizer/modules/randomizer/settings.ini
 * Run launch.bat
-* It will extract changed files to Fallout/DATA/ directory
+* It will extract changed files from MASTER.DAT to Fallout/DATA/ directory
 
 
 ## Notes
