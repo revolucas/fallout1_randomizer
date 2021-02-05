@@ -4,6 +4,17 @@ function application_init()
 	local path = config:r_string("path","fallout1",[[C:\Program Files (x86)\Steam\steamapps\common\Fallout\]])
 	filesystem.mount(path,"Fallout/",false)
 	filesystem.setWriteDirectory(path)
+	
+	local seedStr = config:r_string("randomize","seed")
+	if (seedStr) then
+		local seed = 0
+		for i=1,#seedStr do
+			seed = seed + string.byte(seedStr,i)
+		end
+		math.randomseed(seed)
+	else
+		math.randomseed(os.time())
+	end
 end
 
 local EXTRACT_ALL = false -- testing only

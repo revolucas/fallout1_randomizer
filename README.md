@@ -10,7 +10,10 @@ x64 bit Lua Fallout 1 randomizer
 * Randomize Weapon Damage
 
 ## Usage
-* Set Fallout 1 directory in fallout1_randomizer/modules/randomizer/settings.ini
+* Open configuration in fallout1_randomizer/modules/randomizer/settings.ini
+* Set 'path' to Fallout 1 directory
+* Choose a random seed ```seed = You can put a sentence, a word or phrase```
+* Choose other options by setting either false or true
 * Run launch.bat
 * It will extract changed files from MASTER.DAT to Fallout/DATA/ directory
 
