@@ -1,0 +1,4 @@
+<xml>
+	<module name="root" path="data/" mount="/" relative="true" />
+	<module name="randomizer" path="modules/randomizer/" mount="/" relative="true" />
+</xml>
