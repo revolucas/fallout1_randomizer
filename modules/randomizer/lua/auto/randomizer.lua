@@ -147,7 +147,7 @@ function extract_FO1(stream)
 end
 
 function randomize_critter(stream)
-	if (config:r_bool("randomize","CritterSpecial",false)) then
+	if (config:r_bool("randomize","CritterSPECIAL",false)) then
 		stream:w_seek(0x00BC)
 		stream:r_seek(0x0030)
 		for i=1,7 do
